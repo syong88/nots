@@ -1,0 +1,932 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>NOTS</title>
+	<meta charset='utf-8'>	
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0'>
+	<meta name='title' content='NOTS'>
+	<meta name='subject' content='NOTS'>
+	<meta name='publisher' content='윤소영'>
+	<meta name='location' content='Seoul Korea'>
+	<meta name='author' content='NOTS'>
+	<meta name='author-Date' content='2020-02-25'>
+	<meta name='copyright' content='NOTS'>
+	<meta name='description' content='NOTS'>
+	<meta name='keywords' content='NOTS'>
+	<meta name='classification' content='NOTS'>
+	<meta name='robots' content='index,follow'>
+	
+	<link rel='shortcut icon' href='img/fix_logo.gif'>
+	<link rel='apple-touch-icon' href='img/fix_logo.gif'>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type='text/css' href="css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	
+	
+	<link rel='stylesheet' type='text/css' href='css/style.css'>
+	<link rel='stylesheet' type='text/css' href='css/response.css'>
+	
+	
+	<!-- 제공받은 자바스크립트 라이브러리 프로그램 - 오픈소스 -->
+	<script src='js/lib/jquery-1.12.4.min.js'></script>
+	<script src='js/lib/jquery.touchSwipe.js'></script>
+	<script src='js/lib/jquery.easing.1.3.js'></script>
+	<!-- 하위버전이나 사파리에서 벤더프리픽스를 자동으로 설정해준다. -webkit- -ms- -moz- -->
+	<script src='js/lib/prefixfree.min.js'></script>
+
+	
+	
+</head>
+<body>
+<div id='wrap'>
+
+	<ul id='skip'>
+		<li><a href='#nav'>메뉴바로가기</a></li>
+		<li><a href='#main'>메인바로가기</a></li>
+		<li><a href='#footer'>하단바로가기</a></li>
+	</ul>
+	
+	<!-- 팝업창(모달창) -->
+	<div id='popup'>
+		<div class='popup-wrap'> <!-- widht:100%; max-width:1580px; height:200px; background:#f0f0f0; -->
+			<div> <!-- padding:25; -->
+				<div class='popup-container'>
+					<div class='popup-content'>
+					
+					</div>
+					<div class='popup-close-wrap'>
+						<ul>
+							<li>
+								<div>
+									<div><input type='checkbox' name='chkbox' id='chkbox' value=''></div>
+									<div><label for='chkbox'>오늘 하루동안 열지 않음.</label></div>
+								</div>
+							</li>
+							<li>
+								<div>
+									<a href='#' class='popupCloseBt'><img src='img/btn_search_close.png' alt=''></a>	
+								</div>
+							</li>							
+						</ul>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src='js/cookiem.js'></script>
+	<!-- 팝업창(모달창) end -->
+	
+	
+	<header id='header'>
+	
+		<div id='header-wrap'><!--  로고 & 메인메뉴 -->
+			<div class='header-row1'>
+				<div>
+					<h1 class='logo'><a href='javascript:' title='LOGO' class='logoBt'><img src='img/logo.png' alt=''></a></h1>
+					<aside class='aside'>
+						<ul>
+							<li>
+								<a href='javascript:' title='CONTACT US' class='contactusBt'>CONTACT US</a>
+							</li>
+							<li>
+								<span><i></i></span>
+							</li>
+							<li>
+								<a href='javascript:' title='ENGLISH' class='languageBt'>ENGLISH<span><i>▼</i></span></a>
+								<div class='landscape-sub'>
+									<div>
+										<p><a href='#' class='englishBt' title='ENGLISH'>ENGLISH</a></p>
+										<p><a href='#' class='chineseBt' title='CHINESE'>CHINESE</a></p>
+									</div>
+								</div>
+							</li>							
+						</ul>
+					</aside>
+				</div>
+			</div>
+			<div class='header-row2'>
+				
+				<!-- 모바일 메뉴 ////////////////////////////////// -->
+				<div class='mobile'>
+					<div>
+						<div>
+							<!-- 앱바 버튼 -->
+							<span class='appbar-wrap'>
+								<a href='javascript:' class='appbarBt'>
+									<i class='appbar appbar0'></i>
+									<i class='appbar appbar1'></i>
+									<i class='appbar appbar2'></i>
+								</a>
+							</span>
+							
+							<!-- 로고 버튼 -->
+							<h1 class='mlogo'>
+								<a href='javascript:' title='LOGO' class='mlogoBt'>
+									<img src='img/logo.png' alt=''>
+								</a>
+							</h1>
+							
+							<!-- 우측 검색 버튼 -->
+							<div class='msearchBt-wrap'>
+								<span>
+									<a href='javascript:' title='SEARCH' class='msearchBt'>
+										<img src='img/btn_h_search.png' alt=''>
+									</a>
+								</span>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- 모바일 메뉴 끝 -->
+				
+				
+				
+				<!-- 메인메뉴 버튼 -->
+				<nav class='nav'>
+					<ul>
+						<li><a href='javascript:' title='BEST SELLERS' class='mainBt'>BEST SELLERS</a></li>
+						<li><a href='javascript:' title='SKINCARE' class='mainBt'>SKINCARE</a></li>
+						<li><a href='javascript:' title='MAKEUP' class='mainBt'>MAKEUP</a></li>
+						<li><a href='javascript:' title='THE STORY' class='mainBt'>THE STORY</a></li>
+						<li><a href='javascript:' title='EXPERIENCE' class='mainBt'>EXPERIENCE</a></li>
+					</ul>
+				</nav>
+				
+				
+				
+				<!-- ///////  모바일 메인메뉴 ////////////////// -->
+				<nav class='mNav'>
+					<div>
+						<ul class='mMainBt-wrap'>
+							<li>
+								<a href='javascript:' class='mMainBt' title='BEST SELLERS'>BEST SELLERS</a>
+							</li>
+							<li>
+								<a href='javascript:' class='mMainBt' title='SKINCARE'>SKINCARE <span class='moreBt'><i></i></span></a>
+								<div class='sub sub0'>
+									<div>
+										<ul class='mTabBt-wrap mfTabBt-wrap'>
+											<li><a href='javascript:' class='mfTabBt' title='ENGLISH'>CATEGORY</a></li>
+											<li><a href='javascript:' class='mfTabBt' title='ENGLISH'>CONCERN</a></li>
+											<li><a href='javascript:' class='mfTabBt' title='ENGLISH'>COLLECTIONS</a></li>
+										</ul>
+										<div class='mTabSub-wrap mfTabSub-wrap'>
+											<div>
+												<ul class='mfTabSub mfTabSub0'>
+													<li><a href='#'  title='SUNCREAM'>- Mask</a></li>
+													<li><a href='#'  title='SUNCREAM'>- CLEANSER</a></li>
+													<li><a href='#'  title='SUNCREAM'>- TONER/FLUID</a></li>
+													<li><a href='#'  title='SUNCREAM'>- MOISTURIZER</a></li>
+													<li><a href='#'  title='SUNCREAM'>- EYE CARE</a></li>
+													<li><a href='#'  title='SUNCREAM'>- SERUM/ESSENCE</a></li>
+													<li><a href='#'  title='SUNCREAM'>- CREAMR</a></li>
+													<li><a href='#'  title='SUNCREAM'>- etc.</a></li>
+												</ul>
+												<ul class='mfTabSub mfTabSub1'>
+													<li><a href='#'  title='SUNCREAM'>- ACNE</a></li>
+													<li><a href='#'  title='SUNCREAM'>- DRYNESS</a></li>
+													<li><a href='#'  title='SUNCREAM'>- UNEVEN SKIN TONE</a></li>
+													<li><a href='#'  title='SUNCREAM'>- WRINKLES</a></li>
+												</ul>
+												<ul class='mfTabSub mfTabSub2'>
+													<li><a href='#'  title='SUNCREAM'>- 28 REMEDY FOR WOMAN<</a></li>
+													<li><a href='#'  title='SUNCREAM'>- 28 REMEDY FOR MAN</a></li>
+													<li><a href='#'  title='SUNCREAM'>- WHITE LUMINAIRE</a></li>
+													<li><a href='#'  title='SUNCREAM'>- AQUA BARRIER</a></li>
+													<li><a href='#'  title='SUNCREAM'>- THE GARDEN</a></li>
+												</ul>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href='javascript:' class='mMainBt' title='ENGLISH'>MAKEUP <span class='moreBt'><i></i></span></a>
+								<div class='sub sub1'>
+									<div>
+										<ul class='mTabBt-wrap msTabBt-wrap'>
+											<li><a href='javascript:' class='msTabBt' title='ENGLISH'>FACE</a></li>
+											<li><a href='javascript:' class='msTabBt' title='ENGLISH'>LIPS</a></li>
+											<li><a href='javascript:' class='msTabBt' title='ENGLISH'>ACCESSORIES</a></li>
+										</ul>
+										
+										<div class='mTabSub-wrap msTabSub-wrap'>
+											<div>
+												<ul class='msTabSub msTabSub0'>
+													<li><a href='#'  title='SUNCREAM'>- SUNCREAM</a></li>
+													<li><a href='#'  title='SUNCREAM'>- BB CREAM</a></li>
+													<li><a href='#'  title='SUNCREAM'>- CUSHION</a></li>
+													<li><a href='#'  title='SUNCREAM'>- PRIMER</a></li>
+												</ul>
+												<ul class='msTabSub msTabSub1'>
+													<li><a href='#'  title='SUNCREAM'>- LIP GLOSS</a></li>
+													<li><a href='#'  title='SUNCREAM'>- LIP BALLM</a></li>
+												</ul>
+												<ul class='msTabSub msTabSub2'>
+													<li><a href='#'  title='SUNCREAM'>- BRUSH</a></li>
+													<li><a href='#'  title='SUNCREAM'>- POUCH</a></li>
+													<li><a href='#'  title='SUNCREAM'>- COTTON PUFF</a></li>
+													<li><a href='#'  title='SUNCREAM'>- HAND CREAM</a></li>
+												</ul>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								
+							</li>
+							<li>
+								<a href='javascript:' class='mMainBt' title='ENGLISH'>THE STORY</a>
+							</li>
+							<li>
+								<a href='javascript:' class='mMainBt' title='ENGLISH'>EXPERIENCE</a>
+							</li>
+							<li>
+								<a href='javascript:' class='mMainBt' title='ENGLISH'>CONTACT US</a>
+							</li>
+						</ul>
+						
+						<ul class='language-wrap'>
+							<li><a href='javascript:' class='languageBt' title='ENGLISH'>ENGLISH</a></li>
+							<li><span><i></i></span></li>
+							<li><a href='javascript:' class='languageBt' title='CHINESE'>CHINESE</a></li>
+						</ul>
+						
+						<div class='closeBt-wrap'>
+							<span><a href='javascript:' class='headerCloseBt' title='Close Button'><img src='img/btn_search_close.png' alt=''></a></span>
+						</div>
+					</div>
+				</nav>
+				<!-- ///////  모바일 메인메뉴 ////////////////// -->
+				
+				
+				<!-- 좌측 페이스북, 인스타그램 아이콘 버튼 -->
+				<div class='sns-wrap'>
+					<ul>
+						<li class='fixlogo-wrap'>
+							<span><a href='javascript:' title='LOGO' class='fixlogoBt'><img src='img/fix_logo.gif' alt=''></a></span>
+						</li>
+						<li class='facebook-instagram-wrap fixedclear'>
+							<span><a href='javascript:' title='FACEBOOK' class='facebookBt'><img src='img/btn_sns01.png' alt=''></a></span>
+							<span><a href='javascript:' title='INSTAGRAM' class='instagramBt'><img src='img/btn_sns02.png' alt=''></a></span>
+						</li>
+					</ul>
+				</div>
+				
+				<!-- 우측 검색 버튼 -->
+				<div class='searchBt-wrap'>
+					<span><a href='javascript:' title='SEARCH' class='searchBt'><img src='img/btn_h_search.png' alt=''></a></span>
+				</div>
+				
+				<!-- 검색[SEARCH] 박스 -->
+				<div class='search-form-wrap'>
+					<div>
+						<div class='search-form-content'>
+							<h2>SEARCH</h2>
+							<div class='search-input-wrap'>
+								<form name='searchForm' id='searchForm' method='get' action='./search/index.html'>
+									<div>
+										<div><input type='text' name='searchText' id='searchText' value=''></div>
+										<span><a href='javascript:' class='searchFormBt'><img src='img/btn_h_search02.png' alt=''></a></span>
+									</div>
+								</form>
+							</div>
+							<span class='searchCloseBt-wrap'><a href='javascript:' class='searchCloseBt'><img src='img/btn_search_close.png' alt=''></a></span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<section id='section1'>
+			<div>
+				<div class='sec1Slide-container'>
+					<div class='sec1Slide-view'>
+						<ul class='sec1Slide-wrap'>
+							<li class='slide slide2'>
+								<div>
+									<div class='slide-title'>
+										<h2>
+											NOTS<br>
+											CREATE VALUE
+										</h2>
+										<h4>
+											We focus on skin style.<br>
+											Nature functional cosmetics,NOTS
+										</h4>
+									</div>
+									<a href='javascript:' class='sec1SlideBt blind'>NOTS MAKING THE VIDEO</a>
+								</div>
+							</li>
+							<li class='slide slide0'>
+								<div>
+									<div class='slide-title'>
+										<h2>
+											NOTS<br>
+											CREATE VALUE
+										</h2>
+										<h4>
+											We focus on skin style.<br>
+											Nature functional cosmetics,NOTS
+										</h4>
+									</div>
+									<a href='javascript:' class='sec1SlideBt blind'>NOTS MAKING THE VIDEO</a>
+								</div>
+							</li>
+							<li class='slide slide1'>
+								<div>
+									<div class='slide-title'>
+										<h2>
+											NOTS<br>
+											CREATE VALUE
+										</h2>
+										<h4>
+											We focus on skin style.<br>
+											Nature functional cosmetics,NOTS
+										</h4>
+									</div>
+									<a href='javascript:' class='sec1SlideBt blind'>NOTS MAKING THE VIDEO</a>
+								</div>
+							</li>
+							<li class='slide slide2'>
+								<div>
+									<div class='slide-title'>
+										<h2>
+											NOTS<br>
+											CREATE VALUE
+										</h2>
+										<h4>
+											We focus on skin style.<br>
+											Nature functional cosmetics,NOTS
+										</h4>
+									</div>
+									<a href='javascript:' class='sec1SlideBt blind'>NOTS MAKING THE VIDEO</a>
+								</div>
+							</li>
+							<li class='slide slide0'>
+								<div>
+									<div class='slide-title'>
+										<h2>
+											NOTS<br>
+											CREATE VALUE
+										</h2>
+										<h4>
+											We focus on skin style.<br>
+											Nature functional cosmetics,NOTS
+										</h4>
+									</div>
+									<a href='javascript:' class='sec1SlideBt blind'>NOTS MAKING THE VIDEO</a>
+								</div>
+							</li><!-- slide -->
+						</ul><!-- wrap -->
+					</div><!-- view -->
+					
+					<!-- NEXT PREV 버튼 -->
+					<span class='sec1PrevBt-wrap'><a href='javascript:' class='sec1PrevBt  timeControl'><img src='img/btn_slide_prev.png' alt=''></a></span>					
+					<span class='sec1NextBt-wrap'><a href='javascript:' class='sec1NextBt  timeControl'><img src='img/btn_slide_next.png' alt=''></a></span>
+					
+					<!-- PAGE BUTTON 버튼 -->
+					<div class='sec1Slide-page-wrap timeControl'>  
+						<ul>
+							<li><a href='javascript:' class='sec1PageBt'><i></i></a></li>
+							<li><a href='javascript:' class='sec1PageBt'><i></i></a></li>
+							<li><a href='javascript:' class='sec1PageBt'><i></i></a></li>
+						</ul>
+					</div>
+
+					<!-- SKIP 버튼 -->
+					<span class='sec1SkipBt-wrap'><a href='javascript:' class='sec1SkipBt'>SKIP</a></span>
+					
+				</div> <!-- container -->
+			</div>
+		</section>		
+	</header>
+
+	<main id='main'>
+		<section id='section2'>
+			<div>
+				<div class='section2-slide-container'>
+					<div class='section2-slide-view'>
+						<ul class='section2-slide-wrap fixedclear'>
+							<li class='sec2Slide sec2Slide2'>
+								<div>
+									<!-- 슬라이드 이미지 배경 높이 752  500  400 -->
+									<div class='sec2-slide-title'>
+										<div>
+											<h3>Remember The 28 Days</h3>
+											<h2>28 Remedy</h2>
+											<h4>The regeneration cycle<br> of normal skin</h4>
+										</div>
+									</div>
+									
+									<a href='javascript:' class='sec2SlideBt blind'>슬라이드버튼</a>
+								</div>
+							</li>
+							<li class='sec2Slide sec2Slide0'>
+								<div>
+									<div class='sec2-slide-title'>
+										<div>
+											<h3>Guidance to Hydration Management</h3>
+											<h2>Aqua Barrier</h2>
+											<h4>The moisture barrier prevents skin<br> damage and maintains skin hydration.</h4>
+										</div>
+									</div>
+									
+									<a href='javascript:' class='sec2SlideBt blind'>슬라이드버튼</a>
+								</div>
+							</li>
+							<li class='sec2Slide sec2Slide1'>
+								<div>
+									<div class='sec2-slide-title'>
+										<div>
+											<h3>Skin Lighting Whitening Program</h3>
+											<h2>White Luminaire</h2>
+											<h4>which completes beautiful by<br> brightening the lost light within skin</h4>
+										</div>
+									</div>
+									
+									<a href='javascript:' class='sec2SlideBt blind'>슬라이드버튼</a>
+								</div>
+							</li>
+							<li class='sec2Slide sec2Slide2'>
+								<div>
+									<div class='sec2-slide-title'>
+										<div>
+											<h3>Remember The 28 Days</h3>
+											<h2>28 Remedy</h2>
+											<h4>The regeneration cycle<br> of normal skin</h4>
+										</div>
+									</div>
+									
+									<a href='javascript:' class='sec2SlideBt blind'>슬라이드버튼</a>
+								</div>
+							</li>
+							<li class='sec2Slide sec2Slide0'>
+								<div>
+									<div class='sec2-slide-title'>
+										<div>
+											<h3>Guidance to Hydration Management</h3>
+											<h2>Aqua Barrier</h2>
+											<h4>The moisture barrier prevents skin<br> damage and maintains skin hydration.</h4>
+										</div>
+									</div>
+									
+									<a href='javascript:' class='sec2SlideBt blind'>슬라이드버튼</a>
+								</div>
+							</li>
+						</ul><!-- sec2Slide-wrap -->
+					</div> <!-- sec2Slide-view -->
+					
+					<span class='sec2Control sec2SlideNextBt-wrap'><a href='javascript:' class='sec2SlideNextBt'><img src='img/btn_slide_next02.png' alt=''></a></span>
+					<span class='sec2Control sec2SlidePrevBt-wrap'><a href='javascript:' class='sec2SlidePrevBt'><img src='img/btn_slide_prev02.png' alt=''></a></span>
+					
+				</div><!-- sec2Slide-container -->
+			</div>
+		</section>		
+		<!-- 사용자 js -->
+		<script src='js/header.js'></script>
+		<script src='js/sec1-mainSlide.js'></script>
+		<script src='js/sec2-mainSlide.js'></script>
+		
+		
+		
+		
+		
+		<section id='section3'>
+			<div>
+				<div class='section3-container'>
+					
+					<div class='section3-tabmenu-wrap'>
+						<ul>
+							<li><a href='javascript:' title='28 Remedy' class='sec3TabBt addS3TabDeco'>28 Remedy</a></li>
+							<li><a href='javascript:' title='White Luminaire' class='sec3TabBt'>White Luminaire</a></li>
+							<li><a href='javascript:' title='Aqua Barrier' class='sec3TabBt'>Aqua Barrier</a></li>
+						</ul>
+					</div>
+					
+					<div class='section3-slide-container-wrap'>
+						
+						<!-- 슬라이드0 -->
+						<div class='section3-slide-container section3-slide0-container addSlide'>
+							<div class='section3-slide-view section3-slide0-view'>
+								<ul class='section3-slide-wrap section3-slide0-wrap fixedclear'>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/28RemedyBalancingToner_1453190353625.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/28RemedyDayMoisturizer_1453190472180.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/28RemedyRepairCream__1453190500056.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/28RemedyNightMoisturizer_1453190481776.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/28RemedyIntensiveSerum_1453190490238.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>
+										</div>
+									</li>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/28RemedyEyeConcentrate__1453190508492.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>
+										</div>
+									</li>
+								</ul><!-- slide wrap -->
+							</div><!-- slide view -->
+							
+							
+							<!-- 슬라이드 다음 이전 버튼  -->
+							<span class='s3NextBt-wrap'>
+								<a href='javascript:' title='next' class='s3NextBt s3s0NextBt'><img src='img/btn_slide_next03.png' alt=''></a>
+							</span>	
+							<span class='s3PrevBt-wrap'>
+								<a href='javascript:' title='preview' class='s3PrevBt s3s0PrevBt'><img src='img/btn_slide_prev03.png' alt=''></a>
+							</span>	
+							
+							<!-- 슬라이드 페이지 버튼  -->
+							<ul class='s3PageBt-wrap'>
+								<li><a href='javascript:' class='s3PageBt s3s0PageBt blind addPageEffect'>페이지버튼</a></li>
+								<li><a href='javascript:' class='s3PageBt s3s0PageBt blind'>페이지버튼</a></li>
+							</ul>
+						</div><!-- slide0 constainer -->
+						
+						<!-- 슬라이드1 -->
+						<div class='section3-slide-container section3-slide1-container'>
+							<div class='section3-slide-view section3-slide1-view'>
+								<ul class='section3-slide-wrap section3-slide1-wrap  fixedclear'>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/WhiteLuminaireRevitalFluid_1453190525091.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>											
+										</div>
+									</li>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/WhiteLuminaireEssence__1453190537799.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>											
+										</div>
+									</li>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/WhiteLuminaireSpotCream__1453190548914.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>											
+										</div>
+									</li>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/WhiteLuminaireCC_1453190609398.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>											
+										</div>
+									</li>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/WhiteLuminaireCC_ForMen_1453190620577.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>											
+										</div>
+									</li>
+								</ul><!-- slide wrap -->
+							</div><!-- slide view -->
+							
+							
+							<!-- 슬라이드 다음 이전 버튼  -->
+							<span class='s3NextBt-wrap'>
+								<a href='javascript:' title='next' class='s3NextBt s3s1NextBt'><img src='img/btn_slide_next03.png' alt=''></a>
+							</span>	
+							<span class='s3PrevBt-wrap'>
+								<a href='javascript:' title='preview' class='s3PrevBt s1s0PrevBt'><img src='img/btn_slide_prev03.png' alt=''></a>
+							</span>	
+							
+							<!-- 슬라이드 페이지 버튼  -->
+							<ul class='s3PageBt-wrap'>
+								<li><a href='javascript:' class='s3PageBt s3s1PageBt blind addPageEffect'>페이지버튼</a></li>
+								<li><a href='javascript:' class='s3PageBt s3s1PageBt blind'>페이지버튼</a></li>
+							</ul>
+							
+							
+							
+						</div><!-- slide1 constainer -->
+
+						
+						
+						<!-- 슬라이드2 -->
+						<div class='section3-slide-container section3-slide2-container'>
+							<div class='section3-slide-view section3-slide2-view'>
+								<ul class='section3-slide-wrap section3-slide2-wrap  fixedclear'>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/AquaBarrierHydroSoftener_1545979293672.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>											
+										</div>
+									</li>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/AquaBarrierLevelupCream_1545979930628.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>											
+										</div>
+									</li>
+									<li>
+										<div>
+											<div class='section3-slide-image'>
+												<img src='img/AquaBarrierEssenceMist_1546479711905.jpg' alt=''>
+											</div>
+											<div class='section3-slide-caption'>
+												<h2>28 Remedy Balancing Toner</h2>
+												<h3>Basic skin care solution</h3>
+											</div>
+											<a href='javascript:' class='slideBt slide0Bt blind'>slideBt</a>											
+										</div>
+									</li>
+								</ul><!-- slide wrap -->
+							</div><!-- slide view -->
+							
+							
+							
+							<!-- 슬라이드 다음 이전 버튼  -->
+							<span class='s3NextBt-wrap'>
+								<a href='javascript:' title='next' class='s3NextBt s3s2NextBt'><img src='img/btn_slide_next03.png' alt=''></a>
+							</span>	
+							<span class='s3PrevBt-wrap'>
+								<a href='javascript:' title='preview' class='s3PrevBt s3s2PrevBt'><img src='img/btn_slide_prev03.png' alt=''></a>
+							</span>	
+							
+							<!-- 슬라이드 페이지 버튼  -->
+							<ul class='s3PageBt-wrap'>
+								<li><a href='javascript:' class='s3PageBt s3s2PageBt blind addPageEffect'>페이지버튼</a></li>
+							</ul>
+							
+						</div><!-- slide2 constainer -->
+						
+					</div><!-- SECTION3 SLIDE CONTAINER WRAP -->
+
+
+					
+				</div> <!-- SECTION3 CONTAINER END -->
+			</div>
+		</section>	<!-- SECTION3 END -->	
+		<script src='js/sec3-mainSlide.js'></script>
+		
+		<section id='section4'>
+			<div>
+				<div class='section4-container'> <!--section4 전체 컨테이너-->
+					<ul class='fixedclear'>
+						<li class='section4-left'>
+							<div class='sec4Slide-container'> <!--slide 컨테이너-->
+								<div class='sec4Slide-view'> <!--slide 뷰-->
+									<ul class='sec4Slide-wrap fixedclear'> <!--slide 랩-->
+									
+										<li class='sec4Slide sec4Slide2'>
+											<div>
+												<a href='javascript:' class=''>
+													<img src='img/main_experience01_1453187477856.jpg' alt=''>
+													<span class='sec4Text'>
+														<strong>NOTS NEWS</strong>
+														<span>Lotte Department Store Open</span>
+													</span>
+												</a>
+											</div>
+										</li>	<!--마지막 슬라이드-->
+									
+										<li class='sec4Slide sec4Slide0'>
+											<div>
+												<a href='javascript:' class=''>
+													<img src='img/Untitled-11_1453192855724.png' alt=''>
+													<span class='sec4Text'>
+														<strong>NOTS NEWS</strong>
+														<span>NOTS CM : CJ channel(tvN, mnet, etc)</span>
+													</span>
+												</a>
+											</div>
+										</li>	
+										<li class='sec4Slide sec4Slide1'>
+											<div>
+												<a href='javascript:' class=''>
+													<img src='img/Untitled-33_1453192884469.png' alt=''>
+													<span class='sec4Text'>
+														<strong>NOTS NEWS</strong>
+														<span>Let美人 Launching Show</span>
+													</span>
+												</a>
+											</div>
+										</li>	
+										<li class='sec4Slide sec4Slide2'>
+											<div>
+												<a href='javascript:' class=''>
+													<img src='img/main_experience01_1453187477856.jpg' alt=''>
+													<span class='sec4Text'>
+														<strong>NOTS NEWS</strong>
+														<span>Lotte Department Store Open</span>
+													</span>
+												</a>
+											</div>
+										</li>	<!--원래슬라이드3개-->
+										
+										<li class='sec4Slide sec4Slide0'>
+											<div>
+												<a href='javascript:' class=''>
+													<img src='img/Untitled-11_1453192855724.png' alt=''>
+													<span class='sec4Text'>
+														<strong>NOTS NEWS</strong>
+														<span>NOTS CM : CJ channel(tvN, mnet, etc)</span>
+													</span>
+												</a>
+											</div>
+										</li>	<!--첫번째 슬라이드-->
+										
+									</ul>	
+								</div>	<!--slide View-->
+								
+								<ul class='sec4PageBt-wrap'>
+									<li><a href='javascript:' title='pageBt' class='sec4PageBt addCurrentPage blind'>pageBt</a></li>
+									<li><a href='javascript:' title='pageBt' class='sec4PageBt blind'>pageBt</a></li>
+									<li><a href='javascript:' title='pageBt' class='sec4PageBt blind'>pageBt</a></li>
+								</ul>
+								
+							</div>	<!--slide container-->
+						</li>
+						<li class='section4-right'>
+							<ul class='section4-right-wrap'>
+								<li>
+									<div>
+										<a href='javascript:' title='INGREDIENTS' class=''>
+											<img src='img/main_experience02.jpg' alt=''>
+											<span class='sec4Text sec4Text2'>
+												<strong>INGREDIENTS</strong>
+												<span>Natural Functional<br> Cosmetic, NOTS</span>
+											</span>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href='javascript:' title='MOVIE' class=''>
+											<img src='img/main_experience03.jpg' alt=''>
+											<span class='sec4Text'>
+												<strong>MOVIE</strong>
+												<span>NOTS Healthy Channel</span>
+											</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section> 	<!-- section4 END -->	
+		<script src='js/sec4-mainSlide.js'></script>
+		
+		
+		<section id='section5'>
+			<div>
+				<div class="youtubeWrap" data-url="1GQLI-jUp3o">					
+					<iframe></iframe>
+				</div>
+				<span class='ytCap'></span>
+
+			</div>
+		</section>	
+		<script src='js/youtubeFrame.js'></script>
+		
+	</main>
+
+	<footer id='footer'>
+		<div>
+			<div class='footer-txt-wrp'>
+				<h1>
+					<a href='#'><img src='img/logo.png' alt=''></a>
+				</h1>
+				<address>
+					4F, 16 Seongneung-ro 131-gil, Gangnam-gu, Seoul, Korea (06059)<br>
+						Tel. +82-1544-3039 Fax.<i></i>+82-70-8677-6188<i></i>E-mail. nots@nots.co.kr<br>
+						Copyright(c) NoTS co., Ltd. All rights Reserved.
+				</address>
+			</div>
+		</div>
+	</footer>	
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
